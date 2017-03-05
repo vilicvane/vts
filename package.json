@@ -1,0 +1,25 @@
+{
+  "name": "vts",
+  "version": "0.1.0",
+  "description": "V-branded TypeScript coding standard",
+  "main": "base.json",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilic/vts.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "tslint"
+  ],
+  "author": "vilicvane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vilic/vts/issues"
+  },
+  "homepage": "https://github.com/vilic/vts#readme"
+}
