@@ -61,6 +61,7 @@
     "no-empty": false,
     "switch-default": false,
     "no-namespace": false,
-    "no-shadowed-variable": false
+    "no-shadowed-variable": false,
+    "no-unused-variable": true
   }
 }
