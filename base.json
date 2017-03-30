@@ -1,5 +1,6 @@
 {
   "extends": "tslint:recommended",
+  "defaultSeverity": "error",
   "rules": {
     "quotemark": [
       true,
@@ -62,6 +63,9 @@
     "switch-default": false,
     "no-namespace": false,
     "no-shadowed-variable": false,
-    "no-unused-variable": true
+    "no-unused-variable": true,
+    "no-floating-promises": true,
+    "prefer-const": false,
+    "ban-types": false
   }
 }
