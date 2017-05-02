@@ -1,6 +1,6 @@
 module.exports = {
   defaultSeverity: 'error',
-  // https://github.com/palantir/tslint/blob/4e06c180aaeef03e3ed6c1ea865e40eafdf133bc/src/configs/all.ts
+  // https://github.com/palantir/tslint/blob/a3d8d6fd5a52537e7d61f2759b68980c649a7685/src/configs/all.ts
   rules: {
     'adjacent-overload-signatures': true,
     'align': {
@@ -39,6 +39,7 @@ module.exports = {
     'completed-docs': false,
     'curly': true,
     'cyclomatic-complexity': false,
+    "deprecation": true,
     'eofline': true,
     'file-header': false,
     'forin': false,
@@ -110,18 +111,22 @@ module.exports = {
     'no-inferrable-types': false,
     'no-inferred-empty-object-type': true,
     'no-internal-module': true,
+    "no-invalid-template-strings": true,
     'no-invalid-this': false,
+    "no-irregular-whitespace": true,
     'no-magic-numbers': false,
     'no-mergeable-namespace': true,
     'no-misused-new': true,
     'no-namespace': false,
     'no-non-null-assertion': false,
     'no-null-keyword': true,
+    "no-object-literal-type-assertion": true,
     'no-parameter-properties': false,
     'no-reference': true,
     'no-reference-import': true,
     'no-require-imports': true,
     'no-shadowed-variable': false,
+    "no-sparse-arrays": true,
     'no-string-literal': true,
     'no-string-throw': true,
     'no-switch-case-fall-through': true,
@@ -130,6 +135,7 @@ module.exports = {
     'no-unnecessary-callback-wrapper': false,
     'no-unnecessary-initializer': true,
     'no-unnecessary-qualifier': true,
+    'no-unnecessary-type-assertion': true,
     'no-unsafe-any': false,
     'no-unsafe-finally': true,
     'no-unused-expression': true,
@@ -139,6 +145,7 @@ module.exports = {
     'no-var-requires': true,
     // TODO: https://github.com/palantir/tslint/issues/2473
     'no-void-expression': false,
+    "number-literal-format": true,
     'object-literal-key-quotes': {
       options: ['as-needed'],
     },
@@ -172,6 +179,7 @@ module.exports = {
     'prefer-for-of': true,
     'prefer-function-over-method': false,
     'prefer-method-signature': true,
+    "prefer-switch": false,
     'prefer-template': true,
     // TODO:
     'promise-function-async': false,
