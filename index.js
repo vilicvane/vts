@@ -127,7 +127,7 @@ module.exports = {
     'no-require-imports': true,
     'no-shadowed-variable': false,
     "no-sparse-arrays": true,
-    'no-string-literal': true,
+    'no-string-literal': false,
     'no-string-throw': true,
     'no-switch-case-fall-through': true,
     'no-trailing-whitespace': true,
