@@ -1,12 +1,12 @@
 {
   "name": "vts",
-  "version": "5.1.1",
+  "version": "5.2.0",
   "description": "V-branded TypeScript coding standard",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
-    "tslint": "~5.1.0"
+    "tslint": "~5.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
