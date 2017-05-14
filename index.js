@@ -6,8 +6,10 @@ module.exports = {
     'align': {
       options: [
         'parameters',
-        'arguments',
+        // 'arguments',
         'statements',
+        'elements',
+        'members',
       ],
     },
     'array-type': {
@@ -83,7 +85,7 @@ module.exports = {
           'protected-static-field',
           'protected-static-method',
           'private-static-field',
-          'private-static-method'
+          'private-static-method',
         ],
       },
     },
