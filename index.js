@@ -33,7 +33,6 @@ module.exports = {
     'comment-format': {
       options: [
         'check-space',
-        'check-uppercase',
       ],
     },
     'completed-docs': false,
