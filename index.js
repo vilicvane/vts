@@ -225,7 +225,8 @@ module.exports = {
     'triple-equals': {
       options: ['allow-null-check'],
     },
-    'type-literal-delimiter': true,
+    // TODO:
+    'type-literal-delimiter': false,
     'typedef': false,
     'typedef-whitespace': [
       true,
