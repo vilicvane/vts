@@ -1,6 +1,6 @@
 module.exports = {
   defaultSeverity: 'error',
-  // https://github.com/palantir/tslint/blob/a3d8d6fd5a52537e7d61f2759b68980c649a7685/src/configs/all.ts
+  // https://github.com/palantir/tslint/blob/85e646980e7ce7ff6a4554f6bb1664dcee95dd02/src/configs/all.ts
   rules: {
     'adjacent-overload-signatures': true,
     'align': {
@@ -30,6 +30,7 @@ module.exports = {
         ['Symbol', 'Avoid using the `Symbol` type. Did you mean `symbol`?'],
       ],
     },
+    'binary-expression-operand-order': false,
     'callable-types': true,
     'class-name': true,
     'comment-format': {
@@ -145,8 +146,9 @@ module.exports = {
     'no-use-before-declare': false,
     'no-var-keyword': true,
     'no-var-requires': true,
-    // TODO: https://github.com/palantir/tslint/issues/2473
-    'no-void-expression': false,
+    'no-void-expression': {
+      options: ['ignore-arrow-function-shorthand'],
+    },
     'number-literal-format': true,
     'object-literal-key-quotes': {
       options: ['as-needed'],
@@ -188,7 +190,10 @@ module.exports = {
     // TODO:
     'promise-function-async': false,
     'quotemark': {
-      options: ['single'],
+      options: [
+        'single',
+        'avoid-template',
+      ],
     },
     'radix': false,
     'restrict-plus-operands': false,
@@ -206,9 +211,11 @@ module.exports = {
       },
     },
     'strict-boolean-expressions': false,
-    // TODO: https://github.com/palantir/tslint/issues/2472
-    'strict-type-predicates': false,
+    'strict-type-predicates': true,
     'switch-default': false,
+    'switch-final-break': {
+      options: ['always'],
+    },
     'trailing-comma': {
       options: {
         multiline: 'always',
@@ -218,6 +225,7 @@ module.exports = {
     'triple-equals': {
       options: ['allow-null-check'],
     },
+    'type-literal-delimiter': true,
     'typedef': false,
     'typedef-whitespace': [
       true,
@@ -238,6 +246,7 @@ module.exports = {
     ],
     'typeof-compare': true,
     'unified-signatures': true,
+    'use-default-type-parameter': true,
     'use-isnan': true,
     'variable-name': {
       options: [
