@@ -1,6 +1,6 @@
 module.exports = {
   defaultSeverity: 'error',
-  // https://github.com/palantir/tslint/blob/85e646980e7ce7ff6a4554f6bb1664dcee95dd02/src/configs/all.ts
+  // https://github.com/palantir/tslint/blob/5875607f36d3888abff6bc1b28c667819433769f/src/configs/all.ts
   rules: {
     'adjacent-overload-signatures': true,
     'align': {
@@ -179,7 +179,7 @@ module.exports = {
         'named-imports-order': 'lowercase-last',
       },
     },
-    'prefer-conditional-expression': true,
+    'prefer-conditional-expression': false,
     'prefer-const': false,
     'prefer-for-of': true,
     'prefer-function-over-method': false,
