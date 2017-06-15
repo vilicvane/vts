@@ -134,7 +134,7 @@ module.exports = {
     'no-string-throw': true,
     'no-switch-case-fall-through': true,
     'no-trailing-whitespace': true,
-    'no-unbound-method': true,
+    'no-unbound-method': false,
     'no-unnecessary-callback-wrapper': false,
     'no-unnecessary-initializer': true,
     'no-unnecessary-qualifier': true,
