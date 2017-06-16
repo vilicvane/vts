@@ -184,7 +184,7 @@ module.exports = {
     'prefer-for-of': true,
     'prefer-function-over-method': false,
     'prefer-method-signature': true,
-    'prefer-object-spread': true,
+    'prefer-object-spread': false,
     'prefer-switch': false,
     'prefer-template': true,
     // TODO:
