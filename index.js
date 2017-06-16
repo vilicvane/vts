@@ -123,7 +123,7 @@ module.exports = {
     'no-namespace': false,
     'no-non-null-assertion': false,
     'no-null-keyword': true,
-    'no-object-literal-type-assertion': true,
+    'no-object-literal-type-assertion': false,
     'no-parameter-properties': false,
     'no-reference': true,
     'no-reference-import': true,
