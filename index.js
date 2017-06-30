@@ -42,7 +42,8 @@ module.exports = {
     'curly': true,
     'cyclomatic-complexity': false,
     'deprecation': true,
-    'encoding': true,
+    // TODO: https://github.com/palantir/tslint/issues/2954
+    'encoding': false,
     'eofline': true,
     'file-header': false,
     'forin': false,
