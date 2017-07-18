@@ -107,7 +107,7 @@ module.exports = {
     'no-duplicate-super': true,
     'no-duplicate-variable': true,
     'no-empty': false,
-    'no-empty-interface': true,
+    'no-empty-interface': false,
     'no-eval': false,
     'no-floating-promises': true,
     'no-for-in-array': true,
