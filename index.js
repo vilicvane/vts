@@ -1,6 +1,6 @@
 module.exports = {
   defaultSeverity: 'error',
-  // https://github.com/palantir/tslint/blob/5875607f36d3888abff6bc1b28c667819433769f/src/configs/all.ts
+  // https://github.com/palantir/tslint/blob/5.6.0/src/configs/all.ts
   rules: {
     'adjacent-overload-signatures': true,
     'align': {
@@ -42,8 +42,7 @@ module.exports = {
     'curly': true,
     'cyclomatic-complexity': false,
     'deprecation': true,
-    // TODO: https://github.com/palantir/tslint/issues/2954
-    'encoding': false,
+    'encoding': true,
     'eofline': true,
     'file-header': false,
     'forin': false,
@@ -104,6 +103,7 @@ module.exports = {
     'no-construct': true,
     'no-debugger': true,
     'no-default-export': false,
+    'no-duplicate-imports': true,
     'no-duplicate-super': true,
     'no-duplicate-variable': true,
     'no-empty': false,
@@ -133,7 +133,9 @@ module.exports = {
     "no-sparse-arrays": true,
     'no-string-literal': false,
     'no-string-throw': true,
+    'no-submodule-imports': false,
     'no-switch-case-fall-through': true,
+    'no-this-assignment': false,
     'no-trailing-whitespace': true,
     'no-unbound-method': false,
     'no-unnecessary-callback-wrapper': false,
@@ -211,6 +213,7 @@ module.exports = {
         named: 'never',
       },
     },
+    'space-within-parens': [true, 0],
     'strict-boolean-expressions': false,
     'strict-type-predicates': true,
     'switch-default': false,
