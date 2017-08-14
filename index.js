@@ -215,7 +215,8 @@ module.exports = {
     },
     'space-within-parens': [true, 0],
     'strict-boolean-expressions': false,
-    'strict-type-predicates': true,
+    // TODO:
+    'strict-type-predicates': false,
     'switch-default': false,
     'switch-final-break': {
       options: ['always'],
