@@ -1,6 +1,6 @@
 {
   "name": "vts",
-  "version": "5.6.1",
+  "version": "5.6.2",
   "description": "V-branded TypeScript coding standard",
   "main": "index.js",
   "dependencies": {},
