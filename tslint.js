@@ -1,9 +1,9 @@
 module.exports = {
   defaultSeverity: 'error',
-  // https://github.com/palantir/tslint/blob/5.6.0/src/configs/all.ts
+  // https://github.com/palantir/tslint/blob/5.8.0/src/configs/all.ts
   rules: {
     'adjacent-overload-signatures': true,
-    'align': {
+    align: {
       options: [
         'parameters',
         // 'arguments',
@@ -20,7 +20,8 @@ module.exports = {
     },
     'arrow-return-shorthand': true,
     'await-promise': false,
-    'ban': false,
+    ban: false,
+    'ban-comma-operator': true,
     'ban-types': {
       options: [
         ['Object', 'Avoid using the `Object` type. Did you mean `object`?'],
@@ -34,21 +35,19 @@ module.exports = {
     'callable-types': true,
     'class-name': true,
     'comment-format': {
-      options: [
-        'check-space',
-      ],
+      options: ['check-space'],
     },
     'completed-docs': false,
-    'curly': true,
+    curly: true,
     'cyclomatic-complexity': false,
-    'deprecation': true,
-    'encoding': true,
-    'eofline': true,
+    deprecation: true,
+    encoding: true,
+    eofline: true,
     'file-header': false,
-    'forin': false,
+    forin: false,
     'import-blacklist': false,
     'import-spacing': true,
-    'indent':  {
+    indent: {
       options: ['spaces'],
     },
     'interface-name': {
@@ -105,17 +104,19 @@ module.exports = {
     'no-default-export': false,
     'no-duplicate-imports': true,
     'no-duplicate-super': true,
+    'no-duplicate-switch-case': true,
     'no-duplicate-variable': true,
     'no-empty': false,
     'no-empty-interface': false,
     'no-eval': false,
     'no-floating-promises': true,
     'no-for-in-array': true,
+    'no-implicit-dependencies': true,
     'no-import-side-effect': false,
     'no-inferrable-types': false,
     'no-inferred-empty-object-type': true,
     'no-internal-module': true,
-    "no-invalid-template-strings": true,
+    'no-invalid-template-strings': true,
     'no-invalid-this': false,
     'no-irregular-whitespace': true,
     'no-magic-numbers': false,
@@ -126,11 +127,14 @@ module.exports = {
     'no-null-keyword': true,
     'no-object-literal-type-assertion': false,
     'no-parameter-properties': false,
+    'no-parameter-reassignment': false,
+    'no-redundant-jsdoc': true,
     'no-reference': true,
     'no-reference-import': true,
     'no-require-imports': false,
+    'no-return-await': true,
     'no-shadowed-variable': false,
-    "no-sparse-arrays": true,
+    'no-sparse-arrays': true,
     'no-string-literal': false,
     'no-string-throw': true,
     'no-submodule-imports': false,
@@ -139,6 +143,7 @@ module.exports = {
     'no-trailing-whitespace': true,
     'no-unbound-method': false,
     'no-unnecessary-callback-wrapper': false,
+    'no-unnecessary-class': false,
     'no-unnecessary-initializer': true,
     'no-unnecessary-qualifier': true,
     'no-unnecessary-type-assertion': true,
@@ -171,15 +176,13 @@ module.exports = {
       options: ['ignore-for-loop'],
     },
     'only-arrow-functions': {
-      options: [
-        'allow-declarations',
-        'allow-named-functions',
-      ],
+      options: ['allow-declarations', 'allow-named-functions'],
     },
     'ordered-imports': {
       options: {
         'import-sources-order': 'case-insensitive',
         'named-imports-order': 'lowercase-last',
+        'module-source-path': 'full',
       },
     },
     'prefer-conditional-expression': false,
@@ -192,16 +195,13 @@ module.exports = {
     'prefer-template': true,
     // TODO:
     'promise-function-async': false,
-    'quotemark': {
-      options: [
-        'single',
-        'avoid-template',
-      ],
+    quotemark: {
+      options: ['single', 'avoid-template'],
     },
-    'radix': false,
+    radix: false,
     'restrict-plus-operands': false,
     'return-undefined': true,
-    'semicolon': {
+    semicolon: {
       options: ['always'],
     },
     'space-before-function-paren': {
@@ -232,22 +232,22 @@ module.exports = {
     },
     // TODO:
     'type-literal-delimiter': false,
-    'typedef': false,
+    typedef: false,
     'typedef-whitespace': [
       true,
       {
-        "call-signature": "nospace",
-        "index-signature": "nospace",
-        "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace",
+        'call-signature': 'nospace',
+        'index-signature': 'nospace',
+        parameter: 'nospace',
+        'property-declaration': 'nospace',
+        'variable-declaration': 'nospace',
       },
       {
-        "call-signature": "onespace",
-        "index-signature": "onespace",
-        "parameter": "onespace",
-        "property-declaration": "onespace",
-        "variable-declaration": "onespace",
+        'call-signature': 'onespace',
+        'index-signature': 'onespace',
+        parameter: 'onespace',
+        'property-declaration': 'onespace',
+        'variable-declaration': 'onespace',
       },
     ],
     'typeof-compare': true,
@@ -255,14 +255,9 @@ module.exports = {
     'use-default-type-parameter': true,
     'use-isnan': true,
     'variable-name': {
-      options: [
-        'ban-keywords',
-        'check-format',
-        'allow-leading-underscore',
-        'allow-pascal-case',
-      ],
+      options: ['ban-keywords', 'check-format', 'allow-leading-underscore', 'allow-pascal-case'],
     },
-    'whitespace': {
+    whitespace: {
       options: [
         'check-branch',
         'check-decl',
@@ -272,6 +267,8 @@ module.exports = {
         'check-type',
         'check-typecast',
         'check-preblock',
+        'check-type-operator',
+        'check-rest-spread',
       ],
     },
   },
