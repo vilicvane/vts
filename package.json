@@ -1,6 +1,6 @@
 {
   "name": "vts",
-  "version": "5.6.2",
+  "version": "5.8.0",
   "description": "V-branded TypeScript coding standard",
   "main": "tslint.js",
   "dependencies": {
@@ -18,7 +18,11 @@
     "type": "git",
     "url": "git+https://github.com/vilic/vts.git"
   },
-  "keywords": ["TypeScript", "tslint", "prettier"],
+  "keywords": [
+    "TypeScript",
+    "tslint",
+    "prettier"
+  ],
   "author": "vilicvane",
   "license": "MIT",
   "bugs": {
