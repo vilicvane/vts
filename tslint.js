@@ -28,7 +28,7 @@ module.exports = {
         ['Boolean', 'Avoid using the `Boolean` type. Did you mean `boolean`?'],
         ['Number', 'Avoid using the `Number` type. Did you mean `number`?'],
         ['String', 'Avoid using the `String` type. Did you mean `string`?'],
-        ['Symbol', 'Avoid using the `Symbol` type. Did you mean `symbol`?'],
+        // ['Symbol', 'Avoid using the `Symbol` type. Did you mean `symbol`?'],
       ],
     },
     'binary-expression-operand-order': false,
@@ -255,7 +255,12 @@ module.exports = {
     'use-default-type-parameter': true,
     'use-isnan': true,
     'variable-name': {
-      options: ['ban-keywords', 'check-format', 'allow-leading-underscore', 'allow-pascal-case'],
+      options: [
+        'ban-keywords',
+        'check-format',
+        'allow-leading-underscore',
+        'allow-pascal-case',
+      ],
     },
     whitespace: {
       options: [
