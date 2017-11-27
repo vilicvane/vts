@@ -71,9 +71,7 @@ module.exports = {
     'member-ordering': {
       options: {
         order: [
-          'public-instance-field',
-          'protected-instance-field',
-          'private-instance-field',
+          'instance-field',
           'public-constructor',
           'protected-constructor',
           'private-constructor',
