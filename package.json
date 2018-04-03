@@ -2,18 +2,6 @@
   "name": "vts",
   "version": "5.8.3",
   "description": "V-branded TypeScript coding standard",
-  "main": "tslint.js",
-  "dependencies": {
-    "tslint-config-prettier": "^1.10.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.7.4",
-    "tslint": "^5.8.0"
-  },
-  "peerDependencies": {
-    "prettier": "^1.7.4",
-    "tslint": "^5.8.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vilic/vts.git"
@@ -28,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/vilic/vts/issues"
   },
-  "homepage": "https://github.com/vilic/vts#readme"
+  "homepage": "https://github.com/vilic/vts#readme",
+  "files": [
+    "tslint.js",
+    "tslint-prettier.js",
+    "prettier.js",
+    "tsconfig.json",
+    "tsconfig-browser.json"
+  ],
+  "dependencies": {
+    "tslint-config-prettier": "^1.10.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.7.4",
+    "tslint": "^5.8.0"
+  },
+  "peerDependencies": {
+    "prettier": "^1.7.4",
+    "tslint": "^5.8.0"
+  }
 }
