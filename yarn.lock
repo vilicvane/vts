@@ -181,9 +181,9 @@ tslib@^1.7.1:
   version "1.8.0"
   resolved "http://registry.npm.taobao.org/tslib/download/tslib-1.8.0.tgz#dc604ebad64bcbf696d613da6c954aa0e7ea1eb6"
 
-tslint-config-prettier@^1.6.0:
-  version "1.6.0"
-  resolved "http://registry.npm.taobao.org/tslint-config-prettier/download/tslint-config-prettier-1.6.0.tgz#fec1ee8fb07e8f033c63fed6b135af997f31962a"
+tslint-config-prettier@^1.10.0:
+  version "1.10.0"
+  resolved "http://registry.npm.taobao.org/tslint-config-prettier/download/tslint-config-prettier-1.10.0.tgz#5063c413d43de4f6988c73727f65ecfc239054ec"
 
 tslint@^5.8.0:
   version "5.8.0"
