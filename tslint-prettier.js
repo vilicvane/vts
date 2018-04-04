@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['.', 'tslint-config-prettier'],
+  extends: ['./tslint', 'tslint-config-prettier'],
 };
